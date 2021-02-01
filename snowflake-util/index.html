@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twitter/Discord Snowflake Deconstructor - BluSpring's Site</title>
+        
+        <style>
+            body {
+                overflow: hidden;
+                background-color: rgb(54, 55, 59);
+                color: rgb(224, 224, 224);
+            }
+
+
+            .app {
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .title {
+                font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            #modify {
+                font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .footer {
+                position: absolute;
+                font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                font-size: 24px;
+            }
+
+            .color {
+                color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="app">
+            <h1 class="title">Twitter / Discord ID (Snowflake) Deconstructor</h1>
+            <select id="epoch">
+                <option value="1288834974657">Twitter</option>
+                <option value="1420070400000">Discord</option>
+            </select>
+
+            <input type="text" id="id" label="Snowflake ID">
+            <h3 id="modify">
+                Timestamp : 0<br>
+                Worker ID : 0<br>
+                Process ID : 0<br>
+                Increment : 0<br>
+                Binary : 0
+            </h3>
+
+            <h5 class="footer">Made by <span class="color">BluSpring#1926</span></h5>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
