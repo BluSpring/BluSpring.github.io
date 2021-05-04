@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home - BluSpring</title>
+        <title>BluSpring</title>
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -9,46 +9,125 @@
     <body>
         <!-- Very unnecessary but I like it :P -->
         <div class="app">
-            <div id="home">
+            <div class="selector">
+                <div class="selector_container" id="selector_container">
+                    <span id="home_selector">Home</span>&nbsp;&nbsp;
+                    <span id="art_selector">Art</span>&nbsp;&nbsp;
+                    <span id="projects_selector">Projects</span>&nbsp;&nbsp;
+                    <span id="system_selector">System</span>&nbsp;&nbsp;
+                    <span id="about_selector">About</span>
+
+                    <div class="home_selected" id="selector_thing">&nbsp;</div>
+                </div>
+            </div>
+
+            <!-- Home -->
+
+            <div id="home" style="display: none; top: -100000vh;">
                 <div class="pfp">
                     <img src="assets/img/New pfp again 2.png">
                 </div>
                 <span class="title">BluSpring</span>
                 <div class="buttons">
-                    <div class="twitter" onclick="window.location='https://twitter.com/BIuSpring'">
-                        <a><i class="fab fa-twitter"></i></a>
+                    <div class="twitter">
+                        <a href="https://twitter.com/BIuSpring"><i class="fab fa-twitter"></i></a>
                     </div>
-                    <div class="youtube" onclick="window.location='https://youtube.com/IndoHQBlu'">
-                        <a><i class="fab fa-youtube"></i></a>
+                    <div class="youtube">
+                        <a href="https://youtube.com/IndoHQBlu"><i class="fab fa-youtube"></i></a>
                     </div>
-                    <div class="twitch" onclick="window.location='https://twitch.tv/bluspring'">
-                        <a><i class="fab fa-twitch"></i></a>
+                    <div class="twitch">
+                        <a href="https://twitch.tv/bluspring"><i class="fab fa-twitch"></i></a>
                     </div>
-                    <div class="discord" onclick="window.location='https://discord.gg/CgJNzJBMf2'">
-                        <a><i class="fab fa-discord"></i></a>
+                    <div class="discord">
+                        <a href="https://discord.gg/CgJNzJBMf2"><i class="fab fa-discord"></i></a>
                     </div>
-                    <div class="github" onclick="window.location='https://github.com/BluSpring'">
-                        <a><i class="fab fa-github"></i></a>
+                    <div class="github">
+                        <a href="https://github.com/BluSpring"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
+
+            <!-- Art -->
+
+            <div id="art" style="display: none; top: -100000vh;">
+                <div id="art_container">
+                    <!-- Edit index.js files variable to add images. -->
+                </div>
+            </div>
+
+            <!-- Projects -->
+
+            <div id="projects" style="display: none; top: -100000vh;">
+                <span>Lemme finish them first, cuz I am very forgetful at doing stuff<br><br>(might be ADHD but I'm undiagnosed so idk)</span>
+            </div>
+
+            <!-- System -->
+
+            <div id="system" style="display: none; top: -100000vh;">
+                <div class="system_container">
+                    <div id="macbook_specs" class="specs_button">
+                        <a>Primary Computer</a><br>
+                        <div id="macbook_specs_extend" class="specs_extend">
+                            <span><span>Model :</span> MacBook Air 2017</span><br>
+                            <span><span>CPU :</span> Intel i5-5350U @ 1.80 GHz (2x)</span><br>
+                            <span><span>RAM :</span> 8 GB 1600 MHz LPDDR3</span><br>
+                            <span><span>SSD(n't) :</span> 128 GB Apple SSD PCIe SM0128G</span><br>
+                            <span><span>Storage HDD :</span> 2 TB Western Digital My Passport Ultra 0827</span><br>
+                            <span><span>Games HDD :</span> 500 GB Western Digital Blue 5400RPM WD5000LPVX</span><br>
+                            <span><span>Software HDD :</span> 320 GB Seagate Momentus 5400RPM ST9320325AS</span><br>
+                            <span><span>iGPU :</span> Intel HD Graphics 6000</span>
+                        </div>
+                    </div><br>
+
+                    <div id="toshiba_specs" class="specs_button">
+                        <a>Secondary Computer</a><br>
+                        <div id="toshiba_specs_extend" class="specs_extend">
+                            <span><span>Model :</span> Toshiba Satellite C800 (i can't find it anywhere)</span><br>
+                            <span><span>CPU :</span> Intel Pentium 2020M @ 2.40 GHz (2x)</span><br>
+                            <span><span>RAM :</span> 8 GB (2x4GB) 1600 MHz DDR3</span><br>
+                            <span><span>HDD :</span> 320 GB Seagate Momentus 5400RPM ST9320325AS</span>
+                        </div>
+                    </div><br>
+
+                    <div id="accessories_specs" class="specs_button">
+                        <a>Accessories & Peripherals</a><br>
+                        <div id="accessories_specs_extend" class="specs_extend">
+                            <span><span>Keyboard :</span> Logitech G512 Carbon (Tactile Brown)</span><br>
+                            <span><span>Mouse :</span> Logitech G102 Lightsync</span><br>
+                            <span><span>Headset :</span> Logitech G431</span><br>
+                            <span><span>Camera :</span> Xiaomi Redmi 9A [i'm serious]</span><br>
+                            <span><span>Phone :</span> Samsung Galaxy A20</span><br>
+                            <span><span>Primary Monitor :</span> SHARP AQUOS 19" LC-19LE150M (1360x768)</span><br>
+                            <span><span>Secondary Monitor :</span> HP L1706 (1280x1024)</span>
+                        </div>
+                    </div><br>
+
+                    <div id="software_specs" class="specs_button">
+                        <a>Software Used</a><br>
+                        <div id="software_specs_extend" class="specs_extend">
+                            <span><span>Streaming / Recording :</span> OBS Studio</span><br>
+                            <span><span>Camera :</span> DroidCam OBS</span><br>
+                            <span><span>Audio Mixer :</span> VoiceMeeter Potato & Banana</span><br>
+                            <span><span>"Streamdeck" :</span> Dex System (custom-written, Node.js)</span><br>
+                            <span><span>Camera Auto-Zoom :</span> AutOBS (custom-written, Node.js)</span><br>
+                            <span><span>3D Animation :</span> Blender v2.91</span><br>
+                            <span><span>2D Art :</span> Paint Tool SAI, paint.net</span><br>
+                            <span><span>Video Editing :</span> VideoPad, HitFilm Express & Blender</span><br>
+                            <span><span>Coding IDEs :</span> Visual Studio Code, IntelliJ IDEA Ultimate</span><br>
+                            <span><span>Screenshots :</span> ShareX</span><br>
+                            <span><span>Mouse Share :</span> Mouse Without Borders</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About -->
+
+            <div id="about" style="display: none; top: -100000vh;">
+
+            </div>
         </div>
 
-        <script>
-            function changeScreen(type) {
-                document.getElementById('home').style.animationName = 'fadeOut';
-                document.getElementById('about').style.animationName = 'fadeOut';
-                document.getElementById('specs').style.animationName = 'fadeOut';
-
-                setTimeout(() => {
-                    document.getElementById('home').style.display = 'none';
-                    document.getElementById('about').style.display = 'none';
-                    document.getElementById('specs').style.display = 'none';
-
-                    document.getElementById(type).style.display = 'block';
-                    document.getElementById(type).style.animationName = 'fadeIn';
-                }, 1000);
-            }
-        </script>
+        <script src="assets/js/index.js"></script>
     </body>
 </html>

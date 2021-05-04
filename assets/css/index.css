@@ -1,6 +1,25 @@
 @font-face {
-    font-family: "UniSans Thin";
+    font-family: 'UniSans Thin';
     src: url('../fonts/Uni\ Sans\ Thin.otf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro EL';
+    src: url('../fonts/SourceSansPro-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro L';
+    src: url('../fonts/SourceSansPro-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro R';
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+.loading {
+    animation-play-state: paused;
 }
 
 body {
@@ -8,22 +27,30 @@ body {
     -webkit-user-select: none;
     -webkit-user-drag: none;
     -moz-user-select: none;
+    user-select: none;
 }
 
 img {
     -webkit-user-select: none;
     -webkit-user-drag: none;
     -moz-user-select: none;
+    user-select: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 :root {
     --text-colour: rgb(124, 120, 120);
     --text-shadow: rgba(61, 60, 60, .7);
+    --text-hover-colour: rgb(155, 154, 154);
 }
 
 .app {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,11 +59,128 @@ img {
     background: linear-gradient(to top right, rgb(21, 21, 27), rgb(33, 33, 44));
 }
 
+.selector {
+    font-family: 'UniSans Thin', "Segoe UI Light", sans-serif;
+    text-shadow: 4px 4px 1px rgba(0,0,0,.8);
+
+    color: var(--text-colour);
+    width: 100vw;
+    height: 1.4em;
+
+    font-size: 2em;
+
+    animation: fadeIn 1s forwards;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 99;
+}
+
+.selector_container {
+    width: 20em;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.selected {
+    color: rgb(104, 140, 182);
+}
+
+/* 
+    Selector Thing values
+
+    Name | Left Value | Width Value
+    -----|------------|------------
+    Home | 0.5em | 3em
+    Art  | 3.8em | 2em
+    Projects | 6.35em | 5em
+    System | 11.775em | 4em
+    About | 16.05em | 3.5em
+
+*/
+
+.selector #selector_thing {
+    position: absolute;
+
+    background-color: var(--text-colour);
+    height: 1px;
+
+    transition: all .5s ease;
+}
+
+.selector span {
+    position: relative;
+    left: 0em;
+    cursor: pointer;
+    transition: color linear .4s;
+}
+
+.selector span:hover {
+    color: rgb(134, 166, 202);
+}
+
+#home_selector:hover ~ #selector_thing {
+    left: 0.5em;
+    width: 3em;
+}
+
+#art_selector:hover ~ #selector_thing {
+    width: 2em;
+    left: 3.8em;
+}
+
+#projects_selector:hover ~ #selector_thing {
+    width: 5em;
+    left: 6.35em;
+}
+
+#system_selector:hover ~ #selector_thing {
+    width: 4em;
+    left: 11.775em;
+}
+
+#about_selector:hover ~ #selector_thing {
+    width: 3.5em;
+    left: 16.05em;
+}
+
+.home_selected {
+    width: 3em;
+    left: 0.5em;
+}
+
+.art_selected {
+    width: 2em;
+    left: 3.8em;
+}
+
+.projects_selected {
+    width: 5em;
+    left: 6.35em;
+}
+
+.system_selected {
+    width: 4em;
+    left: 11.775em;
+}
+
+.about_selected {
+    width: 3.5em;
+    left: 16.05em;
+}
+
 .pfp {
     image-rendering: crisp-edges;
     border-radius: 50%;
     border: 1px solid rgb(120, 160, 175);
-    background: repeating-linear-gradient(to top right, rgb(52, 98, 129), rgb(16, 53, 83), rgb(8, 34, 56));
+    /*background: repeating-linear-gradient(to top right, rgb(52, 98, 129), rgb(16, 53, 83), rgb(8, 34, 56));*/
+    background: rgb(120, 160, 175);
     width: 10em;
     height: 10em;
     transform: rotateX(90deg) rotateY(90deg) translateY(0em);
@@ -47,9 +191,8 @@ img {
     right: 0em;
     margin: auto;
     box-shadow: 15px 15px 15px rgba(0,0,0,0.4);
-    animation: chonk_pfp 3s ease-out;
-    animation-iteration-count: 1;
-    animation-play-state: running;
+    animation: chonk_pfp 1s ease-out;
+    animation-iteration-count: 1s;
     animation-fill-mode: forwards;
     transition: ease-in .4s;
 }
@@ -62,33 +205,35 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+
+    animation: fadeIn 1s forwards ;
+    animation-delay: 0.2s;
 }
 
 @keyframes chonk_pfp {
     from {
-        transform: rotateX(90deg) rotateY(90deg) translateY(0em);
+        transform: rotateX(180deg) rotateY(90deg) rotateZ(0deg) translateY(0em);
     }
-    25% {
-        transform: rotateX(89.9deg) rotateY(0deg) translateY(0em);
-    }
+
     to {
-        transform: rotateX(0deg) rotateY(0deg) translateY(-7em);
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(-7em);
     }
 }
 
 .title {
     position: absolute;
     text-align: center;
-    bottom: 4em;
+    bottom: 2.25em;
     left: 0em;
     right: 0em;
     font-size: 4em;
     color: var(--text-colour);
     text-shadow: 4px 4px 3px rgba(0,0,0,0.4);
-    font-family: "UniSans Thin";
+    font-family: 'UniSans Thin', "Segoe UI Light", sans-serif;
     opacity: 0;
     animation: fadeIn 1s ease-in;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -101,20 +246,33 @@ img {
     }
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .twitter {
     /*color: rgb(39, 88, 110);*/
     color: rgb(100, 94, 94);
     font-size: 2em;
     position: absolute;
-    bottom: 6.5em;
+    bottom: 0;
     left: 0em;
     right: 0em;
     margin: auto;
     transform: translateX(-2em);
     width: 1em;
     height: 1em;
-    font-family: "UniSans Thin";
+    font-family: 'UniSans Thin', "Segoe UI Light", sans-serif;
     cursor: pointer;
+
+    will-change: transform;
+
+    transition: all .5s ease-in-out;
 }
 
 .twitter a {
@@ -132,15 +290,19 @@ img {
     color: rgb(100, 94, 94);
     font-size: 2em;
     position: absolute;
-    bottom: 6.5em;
+    bottom: 0;
     left: 0em;
     right: 0em;
     margin: auto;
     width: 1em;
     height: 1em;
     transform: translateX(0em);
-    font-family: "UniSans Thin";
+    font-family: 'UniSans Thin', "Segoe UI Light", sans-serif;
     cursor: pointer;
+
+    will-change: transform;
+
+    transition: all .5s ease-in-out;
 }
 
 .youtube a {
@@ -158,15 +320,19 @@ img {
     color: rgb(100, 94, 94);
     font-size: 2em;
     position: absolute;
-    bottom: 6.5em;
+    bottom: 0;
     left: 0em;
     right: 0em;
     margin: auto;
     width: 1em;
     height: 1em;
     transform: translateX(2em);
-    font-family: "UniSans Thin";
+    font-family: 'UniSans Thin', "Segoe UI Light", sans-serif;
     cursor: pointer;
+
+    will-change: transform;
+
+    transition: all .5s ease-in-out;
 }
 
 .twitch a {
@@ -184,15 +350,19 @@ img {
     color: rgb(100, 94, 94);
     font-size: 2em;
     position: absolute;
-    bottom: 6.5em;
+    bottom: 0;
     left: 0em;
     right: 0em;
     margin: auto;
     width: 1em;
     height: 1em;
     transform: translateX(-4em);
-    font-family: "UniSans Thin";
+    font-family: 'UniSans Thin', "Segoe UI Light", sans-serif;
     cursor: pointer;
+
+    will-change: transform;
+
+    transition: all .5s ease-in-out;
 }
 
 .discord a {
@@ -210,15 +380,19 @@ img {
     color: rgb(100, 94, 94);
     font-size: 2em;
     position: absolute;
-    bottom: 6.5em;
+    bottom: 0;
     left: 0em;
     right: 0em;
     margin: auto;
     width: 1em;
     height: 1em;
     transform: translateX(4em);
-    font-family: "UniSans Thin";
+    font-family: 'UniSans Thin', "Segoe UI Light", sans-serif;
     cursor: pointer;
+
+    will-change: transform;
+
+    transition: all .5s ease-in-out;
 }
 
 .github a {
@@ -232,147 +406,206 @@ img {
 }
 
 .youtube:hover {
-    animation: youtube .4s ease-in both, hoverYt 2s ease-in-out infinite both;
+    color: #ff0000;
+    transform: translateX(0em) translateY(-4px);
+
+    text-shadow: 8px 8px 12px rgba(0,0,0,.2);
 }
 
 .twitch:hover {
-    animation: twitch .4s ease-in both, hoverTw 2s ease-in-out infinite both;
+    transform: translateX(2em) translateY(-4px);
+    color: #6441a5;
+
+    text-shadow: 8px 8px 12px rgba(0,0,0,.2);
 }
 
 .twitter:hover {
-    animation: twitter .4s ease-in both, hoverTwt 2s ease-in-out infinite both;
+    transform: translateX(-2em) translateY(-4px);
+    color: #1da1f2;
+
+    text-shadow: 8px 8px 12px rgba(0,0,0,.2);
 }
 
 .discord:hover {
-    animation: discord .4s ease-in both, hoverDc 2s ease-in-out infinite both;
+    transform: translateX(-4em) translateY(-4px);
+    color: #ffffff;
+    
+    text-shadow: 8px 8px 12px rgba(0,0,0,.2);
 }
 
 .github:hover {
-    animation: github .4s ease-in both, hoverGh 2s ease-in-out infinite both;
-}
+    color: #f6f8fa;
+    transform: translateX(4em) translateY(-4px);
 
-@keyframes hoverGh {
-    from {
-        transform: translateX(4em) translateY(0px);
-    }
-
-    50% {
-        transform: translateX(4em) translateY(-4px);
-    }
-
-    to {
-        transform: translateX(4em) translateY(0px);
-    }
-}
-
-@keyframes hoverDc {
-    from {
-        transform: translateX(-4em) translateY(0px);
-    }
-
-    50% {
-        transform: translateX(-4em) translateY(-4px);
-    }
-
-    to {
-        transform: translateX(-4em) translateY(0px);
-    }
-}
-
-@keyframes hoverTwt {
-    from {
-        transform: translateX(-2em) translateY(0px);
-    }
-
-    50% {
-        transform: translateX(-2em) translateY(-4px);
-    }
-
-    to {
-        transform: translateX(-2em) translateY(0px);
-    }
-}
-
-@keyframes hoverTw {
-    from {
-        transform: translateX(2em) translateY(0px);
-    }
-
-    50% {
-        transform: translateX(2em) translateY(-4px);
-    }
-
-    to {
-        transform: translateX(2em) translateY(0px);
-    }
-}
-
-@keyframes hoverYt {
-    from {
-        transform: translateX(0em) translateY(0px);
-    }
-
-    50% {
-        transform: translateX(0em) translateY(-4px);
-    }
-
-    to {
-        transform: translateX(0em) translateY(0px);
-    }
-}
-
-@keyframes twitter {
-    from {
-        color: rgb(100, 94, 94);
-    }
-
-    to {
-        color: #1da1f2;
-    }
-}
-
-@keyframes youtube {
-    from {
-        color: rgb(100, 94, 94);
-    }
-
-    to {
-        color: #ff0000;
-    }
-}
-
-@keyframes twitch {
-    from {
-        color: rgb(100, 94, 94);
-    }
-
-    to {
-        color: #6441a5;
-    }
-}
-
-@keyframes discord {
-    from {
-        color: rgb(100, 94, 94);
-    }
-
-    to {
-        color: #ffffff;
-    }
-}
-
-@keyframes github {
-    from {
-        color: rgb(100, 94, 94);
-    }
-
-    to {
-        color: #f6f8fa;
-    }
+    text-shadow: 8px 8px 12px rgba(0,0,0,.2);
 }
 
 .buttons {
-    animation: fadeIn 1s ease-in forwards;
-    animation-delay: 2.5s;
+    animation: fadeIn 0.7s ease-in forwards;
+    animation-delay: 1s;
     opacity: 0;
+    height: 2em;
+    width: 20em;
+    position: absolute;
+    bottom: 6.5em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#home {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 25em;
+    width: 25em;
+}
+
+#art {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+#art_container {
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 98.5vw;
+    height: 85vh;
+
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10vh;
+
+    border-radius: 15px;
+
+    overflow-y: scroll;
+}
+
+.render {
+    width: 22vw;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.75);
+    transition: all .5s ease;
+
+    -webkit-user-select: initial;
+    user-select: initial;
+    -moz-user-select: initial;
+}
+
+.render:hover {
+    transform: translateY(-0.5em);
+    width: 22.5vw;
+    box-shadow: 12px 12px 6px rgba(0, 0, 0, 0.45);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(59, 59, 61);
+}
+
+#projects {
+    font-family: "UniSans Thin", "Segoe UI Light", sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: var(--text-colour);
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+#projects span {
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#system {
+    text-align: center;
+
+    height: 100vh;
+    width: 90vw;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.system_container {
+    height: 92vh;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    overflow: auto;
+}
+
+.specs_button {
+    display: inline-table;
+    background: linear-gradient(to top, #244555, #4584A3);
+    color: rgb(240, 240, 240);
+
+    text-align: center;
+
+    height: 2.2em;
+    width: 100%;
+
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+    
+    z-index: 5;
+
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+
+    vertical-align: top;
+    transition: all 0.5s ease-in;
+    margin: auto;
+}
+
+.specs_button span span {
+    font-family: 'Source Sans Pro R', sans-serif;
+    color: #60A7CA;
+}
+
+.specs_button span {
+    font-family: 'Source Sans Pro EL', sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.specs_button a {
+    font-family: 'Source Sans Pro L', sans-serif;
+    color: rgb(230, 230, 230);
+    font-size: 2.3em;
+
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.specs_button .specs_extend {
+    background: linear-gradient(to top, #526b79, #476374);
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
 }
