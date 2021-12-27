@@ -1,0 +1,12 @@
+.content {
+    text-align: center;
+    color: white;
+    font-family: "Rajdhani Light", Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    top: 15%;
+}
