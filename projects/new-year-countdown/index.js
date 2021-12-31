@@ -217,7 +217,7 @@ setInterval(() => {
 
     const date = new Date();
 
-    clock.innerHTML = `${pad(date.getUTCDate())}/${pad(date.getUTCMonth())}/${date.getUTCFullYear()} &nbsp;&nbsp; ${pad(date.getUTCHours())}:${pad(date.getUTCMinutes())}:${pad(date.getUTCSeconds())}`;
+    clock.innerHTML = `${date.toLocaleDateString()} &nbsp;&nbsp; ${date.toLocaleTimeString()}`;
 
     if (Date.now() < startTime) {
     //if (false) {
