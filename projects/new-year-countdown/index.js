@@ -205,7 +205,16 @@ if (iOS)
 
 const clock = document.getElementById('clock');
 
+let ready = false;
+
 setInterval(() => {
+    if (Date.now() >= songTime - 10_000 && !ready) { // Make sure the audio is fully loaded 10 seconds before it has to go.
+        if (audio.readyState == 0 || audio.readyState == 1)
+            audio.load();
+
+        ready = true;
+    }
+
     if (Date.now() >= songTime && !started) {
     //if (true) {
         started = true;
