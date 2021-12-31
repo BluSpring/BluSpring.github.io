@@ -73,6 +73,11 @@ const SONGS = [
         name: 'Lovejoy - It\'s All Futile! It\'s All Pointless!',
         url: 'https://hermes.bluspring.xyz/iafiap.mp3',
         startAt: '23:58:51'
+    },
+    {
+        name: 'Lovejoy - Model Buses',
+        url: 'https://hermes.bluspring.xyz/modelbuses.mp3',
+        startAt: '23:57:52'
     }
 ];
 
@@ -185,17 +190,18 @@ window.onresize = function() {
     });
 };
 
-window.onblur = () => {
-    document.body.prepend(cloneRequired);
+if (iOS)
+    window.onblur = () => {
+        document.body.prepend(cloneRequired);
 
-    document.getElementById('required-btn').onclick = function() {
-        if (audio.readyState == 0 || audio.readyState == 1)
-            audio.load();
-        audio.preload = 'metadata';
-    
-        document.getElementById('required').remove();
+        document.getElementById('required-btn').onclick = function() {
+            if (audio.readyState == 0 || audio.readyState == 1)
+                audio.load();
+            audio.preload = 'metadata';
+        
+            document.getElementById('required').remove();
+        }
     }
-}
 
 const clock = document.getElementById('clock');
 
