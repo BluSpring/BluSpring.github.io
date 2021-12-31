@@ -68,6 +68,11 @@ const SONGS = [
         name: 'Lovejoy - The Fall',
         url: 'https://hermes.bluspring.xyz/thefall.mp3',
         startAt: '23:57:47'
+    },
+    {
+        name: 'Lovejoy - It\'s All Futile! It\'s All Pointless!',
+        url: 'https://hermes.bluspring.xyz/iafiap.mp3',
+        startAt: '23:58:51'
     }
 ];
 
