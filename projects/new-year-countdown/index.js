@@ -78,6 +78,11 @@ const SONGS = [
         name: 'Lovejoy - Model Buses',
         url: 'https://hermes.bluspring.xyz/modelbuses.mp3',
         startAt: '23:57:52'
+    },
+    {
+        name: 'CG5 - I See A Dreamer', 
+        url: 'https://hermes.bluspring.xyz/isad.mp3',
+        startAt: '23:58:30'
     }
 ];
 
