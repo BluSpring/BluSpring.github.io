@@ -21,6 +21,8 @@ body {
     overflow-x: hidden;
 
     background: rgb(32, 32, 32);
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 img {

@@ -15,6 +15,8 @@
 .navbar {
     font-family: 'Uni Sans Thin', 'Segoe UI Light', sans-serif;
     background: rgba(127, 127, 127, 0.055);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-button:hover {
