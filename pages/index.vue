@@ -1,6 +1,4 @@
 <template>
-    <Navbar />
-
     <main class="w-full">
         <div class="container profile-card justify-between items-center mx-auto pt-24 w-2/3 md:w-1/3 flex-wrap text-center">
             <img class="profile w-1/2 left-0 right-0 mx-auto rounded-full border-2 border-blue-100" src="/assets/img/art/New pfp again^2.png">
@@ -16,19 +14,51 @@
                 <NuxtLink to="https://twitch.tv/bluspring" class="thing">Streamer</NuxtLink> | <NuxtLink to="https://youtube.com/IndoHQBlu" class="thing">YouTuber</NuxtLink>
             </div>
         </div>
-        <div class="container justify-between items-center mx-auto pt-24 pb-6 w-2/3 text-center text-3xl md:text-5xl bottom-0">
-            <NuxtLink to="https://twitter.com/BluSpringg" title="Twitter" class="px-5"><i class="fab fa-twitter"></i></NuxtLink>
-            <NuxtLink to="https://twitch.tv/bluspring" title="Twitch" class="px-5"><i class="fab fa-twitch"></i></NuxtLink>
-            <NuxtLink to="https://youtube.com/IndoHQBlu" title="YouTube" class="px-5"><i class="fab fa-youtube"></i></NuxtLink>
-            <NuxtLink to="https://discord.gg/CgJNzJBMf2" title="Discord" class="px-5"><i class="fab fa-discord"></i></NuxtLink>
-            <NuxtLink to="https://ko-fi.com/bluspring" title="Ko-Fi" class="px-5"><i class="fas fa-coffee-togo"></i></NuxtLink>
-            <NuxtLink to="https://github.com/BluSpring" title="GitHub" class="px-5"><i class="fab fa-github"></i></NuxtLink>
-            <NuxtLink to="https://gitlab.com/BluSpring1" title="GitLab" class="px-5"><i class="fab fa-gitlab"></i></NuxtLink>
+        <div class="socials container justify-between items-center mx-auto pt-16 pb-6 w-2/3 text-center text-3xl md:text-5xl bottom-0">
+            <NuxtLink to="https://twitter.com/BluSpringg" title="Twitter" class="px-5 twitter"><i class="fab fa-twitter"></i></NuxtLink>
+            <NuxtLink to="https://twitch.tv/bluspring" title="Twitch" class="px-5 twitch"><i class="fab fa-twitch"></i></NuxtLink>
+            <NuxtLink to="https://youtube.com/IndoHQBlu" title="YouTube" class="px-5 youtube"><i class="fab fa-youtube"></i></NuxtLink>
+            <NuxtLink to="https://discord.gg/CgJNzJBMf2" title="Discord" class="px-5 discord"><i class="fab fa-discord"></i></NuxtLink>
+            <NuxtLink to="https://ko-fi.com/bluspring" title="Ko-Fi" class="px-5 ko-fi"><i class="fas fa-coffee-togo"></i></NuxtLink>
+            <NuxtLink to="https://github.com/BluSpring" title="GitHub" class="px-5 github"><i class="fab fa-github"></i></NuxtLink>
+            <NuxtLink to="https://gitlab.com/BluSpring1" title="GitLab" class="px-5 gitlab"><i class="fab fa-gitlab"></i></NuxtLink>
         </div>
     </main>
 </template>
 
 <style scoped>
+.socials {
+    color: rgb(206, 206, 206);
+}
+
+.twitter:hover {
+    color: #1d9bf0;
+}
+
+.twitch:hover {
+    color: #6441a5;
+}
+
+.youtube:hover {
+    color: #ff0000;
+}
+
+.discord:hover {
+    color: #5864f2;
+}
+
+.ko-fi:hover {
+    color: #FBAA19;
+}
+
+.github:hover {
+    color: #FFFFFF;
+}
+
+.gitlab:hover {
+    color: #fc6d26;
+}
+
 main {
     font-family: 'Rajdhani Light', 'Segoe UI Light', sans-serif;
 
@@ -43,3 +73,13 @@ main {
     color: rgb(194, 242, 248);
 }
 </style>
+
+<script lang="ts">
+export default {
+    head() {
+        return {
+            title: 'Home - BluSpring'
+        };
+    }
+}
+</script>
