@@ -4,7 +4,7 @@
     <main class="w-full h-full m-auto absolute top-0 left-0 table">
         <div class="projects h-full align-top table-cell pt-14">
             <div class="projects-wrapper overflow-auto justify-center align-middle content-center object-center items-center max-h-full h-full">
-                <div class="w-11/12 h-2/3 pt-1 pb-1 mx-auto">
+                <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
                     <div class="project w-full h-full rounded-md">
                         <ProjectInfoCard 
                             name="CaptainPuffy"
@@ -25,7 +25,7 @@
                         />
                     </div>
                 </div>
-                <div class="w-11/12 h-2/3 pt-1 pb-1 mx-auto">
+                <div class="w-11/12 h-96 md:h-2/3 pt-1 pb-1 mx-auto">
                     <div class="project w-full h-full rounded-md">
                         <ProjectInfoCard 
                             name="Vandal Events"
@@ -34,7 +34,7 @@
                             description="We are a group of people working on seasonal-based Minecraft community events."
                             period="2021-"
                             link="https://vandal.events"
-                            color="#80fce7"
+                            color="#4d978b"
                         />
 
                         <ProjectCard

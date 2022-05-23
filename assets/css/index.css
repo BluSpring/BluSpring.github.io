@@ -12,6 +12,11 @@
     font-family: 'Rajdhani Light';
 }
 
+@font-face {
+    src: url(/assets/fonts/Rajdhani.ttf);
+    font-family: 'Rajdhani';
+}
+
 body {
     -webkit-user-select: none;
     -webkit-user-drag: none;
