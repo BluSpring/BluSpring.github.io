@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-build": "^2.1.0",
+    "@rollup/plugin-node-resolve": "13.0.6",
     "rollup-plugin-import-css": "^3.0.3",
     "rollup-plugin-import-resolver": "^1.2.1",
     "rollup-plugin-node-resolve": "^5.2.0",

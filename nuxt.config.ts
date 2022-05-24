@@ -1,5 +1,5 @@
 import { defineNuxtConfig } from 'nuxt'
-import RollupNodeResolve from 'rollup-plugin-node-resolve';
+import RollupNodeResolve from '@rollup/plugin-node-resolve';
 import RollupTS from 'rollup-plugin-typescript';
 import RollupImport from 'rollup-plugin-import-resolver';
 import RollupCSS from 'rollup-plugin-import-css';
