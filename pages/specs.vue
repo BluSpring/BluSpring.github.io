@@ -9,7 +9,7 @@
                     model="Asus TUF Gaming FX505DY-AL016T"
                 />
 
-                <div class="specifications mx-auto container text-center pt-5">
+                <div class="specifications mx-auto container text-center p-5 rounded-md">
                     <SpecCard title="CPU" description="AMD Ryzen 5 3550H @ 2.10 GHz" />
                     <SpecCard title="GPU" description="AMD Radeon RX 560X" />
                     <SpecCard title="Memory (Slot #0)" description="(1x) 8 GB SK Hynix PC4-21300 DDR4-2666MHz SODIMM" />
@@ -29,7 +29,7 @@
                     model="MacBook Air 2017"
                 />
 
-                <div class="specifications mx-auto container text-center pt-5">
+                <div class="specifications mx-auto container text-center p-5 rounded-md">
                     <SpecCard title="CPU" description="Intel Core i5-5350U @ 1.80 GHz" />
                     <SpecCard title="Memory" description="8 GB LPDDR3-1600MHz SODIMM" />
                     <SpecCard title="SSD (NVMe)" description="128 GB Apple SSD PCIe SM0128G" />
@@ -45,7 +45,7 @@
                     model="Mouse, Keyboard, Headphones, etc."
                 />
 
-                <div class="specifications mx-auto container text-center pt-5">
+                <div class="specifications mx-auto container text-center p-5 rounded-md">
                     <SpecCard title='Primary "Monitor"' description='SHARP AQUOS 19" LC-19LE150M (1360x768)' />
                     <SpecCard title='Secondary "Monitor"' description='SHARP AQUOS 19" LC-19LE150M (1920x1080)' />
                     <SpecCard title="Webcam" description="Samsung Galaxy A03s" />
@@ -67,6 +67,8 @@
     justify-content: center;
     justify-items: center;
     align-content: center;
+
+    background: rgba(43, 43, 43, 0.418);
 }
 </style>
 

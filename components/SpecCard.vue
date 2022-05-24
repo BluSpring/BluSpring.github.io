@@ -2,7 +2,7 @@
     <div class="specification text-center text-white p-0.5 rounded-md inline-block mx-auto">
         <div class="spec-card p-2 border-black rounded-md">
             <div class="title text-gray-200">{{title}}</div>
-            <div class="description">{{description}}</div>
+            <div class="description select-text">{{description}}</div>
         </div>
     </div>
 </template>
