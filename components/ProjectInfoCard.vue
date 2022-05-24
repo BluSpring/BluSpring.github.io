@@ -23,6 +23,10 @@ export default {
 </script>
 
 <style scoped>
+.project-info:hover .image {
+    background-size: 110%;
+}
+
 .info .name {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
@@ -42,10 +46,11 @@ export default {
 }
 
 .image {
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: var(--image);
     background-color: rgba(0, 0, 0, 0.4);
+    transition: all .2s ease-in-out;
 }
 </style>
