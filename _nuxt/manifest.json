@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-358a5136.mjs",
+    "file": "entry-6f40ecff.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -10,10 +10,9 @@
       "pages/specs.vue"
     ],
     "css": [
-      "entry.15810ca1.css"
+      "entry.ad3b4b42.css"
     ],
     "assets": [
-      "profile.71a59be3.png",
       "UniSansThin.a2e7014c.otf",
       "Rajdhani-Light.904e40f6.ttf",
       "Rajdhani-Regular.a6d729f7.ttf",
@@ -551,7 +550,7 @@
     ]
   },
   "pages/commissions.vue": {
-    "file": "commissions-16017a61.mjs",
+    "file": "commissions-c772bc43.mjs",
     "src": "pages/commissions.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -559,7 +558,7 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-6483b0c9.mjs",
+    "file": "index-d116985e.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -567,7 +566,7 @@
     ]
   },
   "pages/projects.vue": {
-    "file": "projects-8eb39208.mjs",
+    "file": "projects-d36913ba.mjs",
     "src": "pages/projects.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -575,7 +574,7 @@
     ]
   },
   "pages/specs.vue": {
-    "file": "specs-0fb200a0.mjs",
+    "file": "specs-047fb520.mjs",
     "src": "pages/specs.vue",
     "isDynamicEntry": true,
     "imports": [
