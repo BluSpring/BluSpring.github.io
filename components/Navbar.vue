@@ -14,9 +14,10 @@
 <style scoped>
 .navbar {
     font-family: 'Uni Sans Thin', 'Segoe UI Light', sans-serif;
-    background: rgba(127, 127, 127, 0.055);
+    background: rgba(0, 0, 0, 0.255);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
 }
 
 .navbar-button:hover {

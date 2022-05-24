@@ -67,8 +67,14 @@
     justify-content: center;
     justify-items: center;
     align-content: center;
+}
 
-    background: rgba(43, 43, 43, 0.418);
+.computer {
+    background: rgba(51, 43, 43, 0.418);
+}
+
+.peripherals {
+    background: rgba(44, 35, 35, 0.418);
 }
 </style>
 
