@@ -10,5 +10,12 @@
     "@nuxtjs/tailwindcss": "^5.0.4",
     "nuxt": "3.0.0-rc.3",
     "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "@nuxt/typescript-build": "^2.1.0",
+    "rollup-plugin-import-css": "^3.0.3",
+    "rollup-plugin-import-resolver": "^1.2.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1"
   }
 }
