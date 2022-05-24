@@ -2,7 +2,7 @@
     <NuxtLink :to="link" class="project-info flex text-center h-5/6 w-32 md:w-48 lg:w-80 hover:brightness-110">
         <div class="w-full h-full rounded-bl-md rounded-tl-md bg-blue-400">
             <div class="h-full">
-                <div class="image w-full h-1/3 rounded-tl-md" :style="'--image: url(/assets/img/projects/works/' + image + ')'"> </div>
+                <div class="image w-full h-1/3 rounded-tl-md" :style="'--image: url(/img/projects/works/' + image + ')'"> </div>
                 <div class="info pt-2 pb-2 md:pt-4 md:pb-4 h-2/3 overflow-y-auto overflow-x-hidden">
                     <h2 class="title text-2xl lg:text-3xl text-gray-200">{{ title }}</h2>
 
