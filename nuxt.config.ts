@@ -16,5 +16,8 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss'
     ],
-    ssr: false
+    ssr: false,
+    generate: {
+        fallback: '200.html'
+    }
 })
