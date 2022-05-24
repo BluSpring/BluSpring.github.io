@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    src: url(/assets/fonts/Uni Sans Thin.otf);
+    src: url(/assets/fonts/UniSansThin.otf);
     font-family: 'Uni Sans Thin';
 }
 
