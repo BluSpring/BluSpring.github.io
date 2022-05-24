@@ -4,6 +4,16 @@
     </main>
 </template>
 
+<script lang="ts">
+export default {
+    head() {
+        return {
+            title: 'Commissions - BluSpring'
+        };
+    }
+}
+</script>
+
 <!-- Will be completed later. -->
 <!--<template>
     <main class="w-full h-full m-auto absolute top-0 left-0 table">
