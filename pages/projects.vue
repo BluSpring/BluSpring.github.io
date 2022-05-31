@@ -25,6 +25,14 @@
                             link="https://www.youtube.com/watch?v=_ALo9zq3jkc"
                             class="inline-block ml-2 mt-2 float-left"
                         />
+                        
+                        <ProjectCard 
+                            title="Minecraft, But I beat it Backwards!"
+                            image="backwards_mc.jpg"
+                            description="A Minecraft mod that makes you start in the End, and work your way up to the Overworld."
+                            link="https://www.youtube.com/watch?v=8Rw5Y3FsShU"
+                            class="inline-block ml-2 mt-2 float-left"
+                        />
                     </div>
                 </div>
                 <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
