@@ -5,7 +5,7 @@
                 <SpecsCard 
                     name="Kizaru"
                     type="Gaming Computer"
-                    description="The computer I use in my daily life. Shipped over to me by someone very special to me :)"
+                    description="The computer I use in my daily life. Shipped over to me by someone who was very special to me."
                     model="Asus TUF Gaming FX505DY-AL016T"
                 />
 
@@ -50,7 +50,7 @@
                     <SpecCard title='Secondary "Monitor"' description='SHARP AQUOS 19" LC-19LE150M (1920x1080)' />
                     <SpecCard title="Webcam" description="Samsung Galaxy A03s" />
                     <SpecCard title="Microphone" description="Neewer NW-700" />
-                    <SpecCard title="Headset" description="Logitech G431" />
+                    <SpecCard title="Headset" description="Astro A10 Gen. 1" />
                     <SpecCard title="Keyboard" description="Logitech G512 Carbon (GX Brown Tactile)" />
                     <SpecCard title="Mouse" description="Logitech G502 Hero" />
                 </div>

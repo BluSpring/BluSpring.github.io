@@ -7,6 +7,9 @@ export default defineNuxtConfig({
         '~/assets/css/index.css',
         '~/assets/css/all.min.css'
     ],
+    js: [
+        '~/assets/js/main.js'
+    ],
     head: {
         title: 'BluSpring Website',
         meta: [
@@ -18,6 +21,6 @@ export default defineNuxtConfig({
     ],
     ssr: false,
     generate: {
-        fallback: '404/index.html'
+        fallback: '404.html'
     }
 })
