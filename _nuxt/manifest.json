@@ -1,16 +1,17 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-12d89102.mjs",
+    "file": "entry-4e2df03e.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
       "pages/commissions.vue",
       "pages/index.vue",
-      "pages/projects.vue",
+      "pages/projects/index.vue",
+      "pages/projects/new-year-countdown.vue",
       "pages/specs.vue"
     ],
     "css": [
-      "entry.52238286.css"
+      "entry.0b910d74.css"
     ],
     "assets": [
       "UniSansThin.a2e7014c.otf",
@@ -550,7 +551,7 @@
     ]
   },
   "pages/commissions.vue": {
-    "file": "commissions-c23f18e0.mjs",
+    "file": "commissions-b93697cd.mjs",
     "src": "pages/commissions.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -558,23 +559,31 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-499272bc.mjs",
+    "file": "index-3ffbddcf.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
-  "pages/projects.vue": {
-    "file": "projects-917acbdc.mjs",
-    "src": "pages/projects.vue",
+  "pages/projects/index.vue": {
+    "file": "index-3a443a44.mjs",
+    "src": "pages/projects/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/projects/new-year-countdown.vue": {
+    "file": "new-year-countdown-61550a4f.mjs",
+    "src": "pages/projects/new-year-countdown.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/specs.vue": {
-    "file": "specs-a958ace1.mjs",
+    "file": "specs-e09a5042.mjs",
     "src": "pages/specs.vue",
     "isDynamicEntry": true,
     "imports": [
