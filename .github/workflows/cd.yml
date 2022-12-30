@@ -26,6 +26,9 @@ jobs:
       - name: Generate
         run: yarn generate
 
+      - name: Dumbest workaround in existence (real)
+        run: cp index.html 404.html
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
