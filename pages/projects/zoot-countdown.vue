@@ -18,6 +18,8 @@
 </template>
 
 <script lang="ts">
+import ConfettiGenerator from '@/assets/js/confetti.js';
+
 function pad(n: number) {
     return (n < 10) ? "0" + n : n;
 }
@@ -46,7 +48,9 @@ export default {
             interval: null,
 
             mode: 'dark',
-            run: false
+            run: false,
+
+            confetti: null
         };
     },
     mounted() {
@@ -58,9 +62,27 @@ export default {
         let started = false;
         let itsNewYear = false;
 
+        // @ts-ignore
+        this.confetti = new ConfettiGenerator({
+            target: this.$refs.confetti,
+            rotate: true,
+            width: window.innerWidth,
+            height: window.innerHeight,
+            clock: 45,
+            start_from_edge: true,
+            respawn: true
+        });
+
+        let runConfetti = false;
+
         this.interval = setInterval(() => {
             if ((Date.now() >= this.songTime && !started) || this.run) {
                 started = true;
+
+                if (!runConfetti && this.run) {
+                    this.confetti.render();
+                    runConfetti = true;
+                }
             }
 
             const date = new Date();
@@ -86,6 +108,8 @@ export default {
             } else {
                 if (!itsNewYear) {
                     itsNewYear = true;
+                    this.confetti.render();
+                    runConfetti = true;
                 }
 
                 this.countdown = `00:00:00:00`;
