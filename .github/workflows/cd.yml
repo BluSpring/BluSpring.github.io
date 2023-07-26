@@ -29,6 +29,9 @@ jobs:
       - name: Dumbest workaround in existence (real)
         run: cp .output/public/index.html .output/public/404.html
 
+      - name: Second dumbest workaround
+        run: "echo 'bluspring.xyz' > CNAME"
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
