@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-74b935a9.mjs",
+    "file": "entry-6487c711.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -12,7 +12,7 @@
       "pages/specs.vue"
     ],
     "css": [
-      "entry.0b910d74.css"
+      "entry.c00d9cca.css"
     ],
     "assets": [
       "UniSansThin.a2e7014c.otf",
@@ -552,7 +552,7 @@
     ]
   },
   "pages/commissions.vue": {
-    "file": "commissions-18632c14.mjs",
+    "file": "commissions-7f8cc788.mjs",
     "src": "pages/commissions.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -560,7 +560,7 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-e2f947b8.mjs",
+    "file": "index-73dcc3a5.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -568,7 +568,7 @@
     ]
   },
   "pages/projects/index.vue": {
-    "file": "index-6bbf14e0.mjs",
+    "file": "index-fea84179.mjs",
     "src": "pages/projects/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -576,7 +576,7 @@
     ]
   },
   "pages/projects/new-year-countdown.vue": {
-    "file": "new-year-countdown-aa06b97d.mjs",
+    "file": "new-year-countdown-341871a7.mjs",
     "src": "pages/projects/new-year-countdown.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -588,7 +588,7 @@
     "file": "confetti-71e3018d.mjs"
   },
   "pages/projects/zoot-countdown.vue": {
-    "file": "zoot-countdown-2c9ba1bc.mjs",
+    "file": "zoot-countdown-8bd15347.mjs",
     "src": "pages/projects/zoot-countdown.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -597,7 +597,7 @@
     ]
   },
   "pages/specs.vue": {
-    "file": "specs-ae70f5ef.mjs",
+    "file": "specs-7bde802a.mjs",
     "src": "pages/specs.vue",
     "isDynamicEntry": true,
     "imports": [
