@@ -30,7 +30,7 @@ jobs:
         run: cp .output/public/index.html .output/public/404.html
 
       - name: Second dumbest workaround
-        run: "echo 'bluspring.xyz' > CNAME"
+        run: "echo 'bluspring.xyz' > .output/CNAME"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
