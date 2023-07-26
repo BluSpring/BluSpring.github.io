@@ -1,11 +1,43 @@
 <!-- copilot-description is basically what GitHub Copilot came up with, and it's funny -->
 
+<!-- TODO: need to be improved -->
 <template>
     <main class="w-full h-full m-auto absolute top-0 left-0 table">
         <div class="projects h-full align-top table-cell pt-14">
             <div class="projects-wrapper overflow-auto justify-center align-middle content-center object-center items-center max-h-full h-full">
                 <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
-                    <div class="project w-full h-full rounded-md float-left overflow-y-auto overflow-x-hidden">
+                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-hidden overflow-x-scroll">
+                        <ProjectInfoCard 
+                            name="Personal Projects"
+                            title="" 
+                            image="bluspring.png"
+                            description="My own personal projects that I've been proud of."
+                            period="2017-"
+                            link="https://bluspring.xyz"
+                            color="#53C6B9"
+                            class="inline-block mt-2 float-left"
+                        />
+
+                        <ProjectCard
+                            title="Kilt"
+                            image="kilt.png"
+                            description="A Fabric mod designed to bring Forge mods into Fabric."
+                            link="https://github.com/KiltMC/Kilt"
+                            class="inline-block ml-2 mt-2 float-left"
+                        />
+
+                        <ProjectCard
+                            title="Nicknamer"
+                            image="nicknamer.png"
+                            description="A Fabric mod for client-side nicknames."
+                            link="https://github.com/BluSpring/Nicknamer"
+                            class="inline-block ml-2 mt-2 float-left"
+                        />
+                    </div>
+                </div>
+
+                <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
+                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-auto overflow-x-auto">
                         <ProjectInfoCard 
                             name="CaptainPuffy"
                             title="Developer" 
@@ -33,10 +65,27 @@
                             link="https://www.youtube.com/watch?v=8Rw5Y3FsShU"
                             class="inline-block ml-2 mt-2 float-left"
                         />
+
+                        <ProjectCard 
+                            title="Minecraft, But I Can ONLY Walk in a Straight Line"
+                            image="straight_mc.jpg"
+                            description="A Minecraft mod that only allows you to walk in a straight line."
+                            link="https://www.youtube.com/watch?v=7lS1xKz5nDE"
+                            class="inline-block ml-2 mt-2 float-left"
+                        />
+
+                        <ProjectCard 
+                            title="THIS MINECRAFT YOUTUBER GOT MONEY JUST BECAUSE I JUMPED!?"
+                            image="jump_mc.jpg"
+                            description="A Minecraft plugin that randomizes which creator you transform into whenever you jump."
+                            link="https://www.youtube.com/watch?v=3Fpfad3HsOA"
+                            class="inline-block ml-2 mt-2 float-left"
+                        />
                     </div>
                 </div>
+
                 <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
-                    <div class="project w-full h-full rounded-md float-left overflow-y-auto overflow-x-hidden">
+                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-hidden overflow-x-scroll">
                         <ProjectInfoCard 
                             name="Vandal Events"
                             title="Lead Developer" 

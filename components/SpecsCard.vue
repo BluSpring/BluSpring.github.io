@@ -3,7 +3,7 @@
         <h3 class="text-5xl text-gray-50">{{ name }}</h3>
         <h5 class="text-gray-100">{{ type }}</h5>
 
-        <div class="description text-gray-50 p-6 w-11/12 max-h-20 sm:max-h-48 md:max-h-96 mx-auto rounded-md text-sm md:text-base lg:text-xl overflow-auto border-red-600 border-2">{{ description }}</div>
+        <div class="description text-gray-50 px-4 py-2 my-3 w-11/12 max-h-20 sm:max-h-48 md:max-h-96 mx-auto rounded-md text-sm md:text-base lg:text-xl overflow-auto border-red-600 border-2">{{ description }}</div>
         <h6 class="text-base text-gray-200 select-text">{{ model != '' ? `Model: ${model}` : '' }}</h6>
     </div>
 </template>

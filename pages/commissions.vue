@@ -17,7 +17,10 @@ export default {
 <!-- Will be completed later. -->
 <template>
     <main class="w-full h-full m-auto absolute top-0 left-0 text-center mt-36 md:mt-16">
-        <div class="commission-types">
+        <div class="text-white text-3xl my-auto h-screen">
+            Currently closed due to not having enough time to do any.
+        </div>
+        <!--<div class="commission-types">
             <section id="3d" class="my-16">
                 <header class="text-5xl text-white">
                     3D-based Commissions
@@ -110,6 +113,6 @@ export default {
 
                 3. Commissioners may cancel a work in progress, or withdraw from their place in the queue, but they will not be granted a refund.<br>
             </p>
-        </div>
+        </div>-->
     </main>
 </template>

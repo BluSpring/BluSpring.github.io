@@ -20,8 +20,11 @@
             <NuxtLink to="https://youtube.com/IndoHQBlu" title="YouTube" class="px-5 youtube"><i class="fab fa-youtube"></i></NuxtLink>
             <NuxtLink to="https://discord.gg/CgJNzJBMf2" title="Discord" class="px-5 discord"><i class="fab fa-discord"></i></NuxtLink>
             <NuxtLink to="https://ko-fi.com/bluspring" title="Ko-Fi" class="px-5 ko-fi"><i class="fas fa-coffee-togo"></i></NuxtLink>
+            <NuxtLink to="https://tumblr.bluspring.xyz" title="Tumblr" class="px-5 tumblr"><i class="fab fa-tumblr"></i></NuxtLink>
             <NuxtLink to="https://github.com/BluSpring" title="GitHub" class="px-5 github"><i class="fab fa-github"></i></NuxtLink>
             <NuxtLink to="https://gitlab.com/BluSpring1" title="GitLab" class="px-5 gitlab"><i class="fab fa-gitlab"></i></NuxtLink>
+            <NuxtLink to="https://tiktok.com/@bluspring_yt" title="TikTok" class="px-5 tiktok"><i class="fab fa-tiktok"></i></NuxtLink>
+            <NuxtLink to="https://reddit.com/u/IndoHQ_Blu_YT" title="Reddit" class="px-5 reddit"><i class="fab fa-reddit"></i></NuxtLink>
         </div>
     </main>
 </template>
@@ -57,6 +60,18 @@
 
 .gitlab:hover {
     color: #fc6d26;
+}
+
+.tumblr:hover {
+    color: #001935;
+}
+
+.reddit:hover {
+    color: #ff4500;
+}
+
+.tiktok:hover {
+    color: #FFFFFF;
 }
 
 main {

@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="link" class="project-info flex text-center h-5/6 w-32 md:w-48 lg:w-80 hover:brightness-110">
+    <NuxtLink :to="link" class="project-info flex text-center h-full w-32 md:w-48 lg:w-80 hover:brightness-110">
         <div class="w-full h-full rounded-bl-md rounded-tl-md bg-blue-400">
             <div class="h-full">
                 <div class="image w-full h-1/3 rounded-tl-md" :style="'--image: url(/img/projects/works/' + image + ')'"> </div>
@@ -43,7 +43,7 @@ export default {
 }
 
 .image {
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: var(--image);

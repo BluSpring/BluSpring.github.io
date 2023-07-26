@@ -15,9 +15,8 @@
                     <SpecCard title="Memory (Slot #0)" description="(1x) 8 GB SK Hynix PC4-21300 DDR4-2666MHz SODIMM" />
                     <SpecCard title="Memory (Slot #1)" description="(1x) 8 GB Kingston PC4-21300 DDR4-2666MHz SODIMM" />
                     <SpecCard title="SSD (NVMe)" description="256 GB Western Digital PC SN520" />
-                    <SpecCard title="HDD (Games)" description="500 GB Western Digital Blue 5400RPM WD5000LPVX" />
-                    <SpecCard title="HDD (Recordings, USB)" description="5 TB Seagate Backup Plus Portable SRD0VN3" />
-                    <SpecCard title="HDD (Storage, USB)" description="2 TB Western Digital My Passport Ultra 0827" />
+                    <SpecCard title="HDD (Games)" description="1 TB Samsung ST1000LM024 HN-M101MBB" />
+                    <SpecCard title="HDD (Storage, USB)" description="2 TB Western Digital My Passport 3321B" />
                 </div>
             </div>
 
@@ -34,6 +33,7 @@
                     <SpecCard title="Memory" description="8 GB LPDDR3-1600MHz SODIMM" />
                     <SpecCard title="SSD (NVMe)" description="128 GB Apple SSD PCIe SM0128G" />
                     <SpecCard title="HDD (Storage, USB)" description="2 TB Seagate Backup Plus Slim SRD00F1" />
+                    <SpecCard title="HDD (Recordings)" description="1 TB Western Digital Purple WD10PURX" />
                 </div>
             </div>
 
