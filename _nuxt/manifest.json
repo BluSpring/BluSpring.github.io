@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-6487c711.mjs",
+    "file": "entry-6ebd3f16.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -8,11 +8,12 @@
       "pages/index.vue",
       "pages/projects/index.vue",
       "pages/projects/new-year-countdown.vue",
-      "pages/projects/zoot-countdown.vue",
-      "pages/specs.vue"
+      "pages/specs.vue",
+      "pages/zuite/resource-packs.vue",
+      "pages/zuite/stream-countdown.vue"
     ],
     "css": [
-      "entry.c00d9cca.css"
+      "entry.6852dede.css"
     ],
     "assets": [
       "UniSansThin.a2e7014c.otf",
@@ -552,7 +553,7 @@
     ]
   },
   "pages/commissions.vue": {
-    "file": "commissions-7f8cc788.mjs",
+    "file": "commissions-51df92e0.mjs",
     "src": "pages/commissions.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -560,7 +561,7 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-73dcc3a5.mjs",
+    "file": "index-81a43f68.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -568,7 +569,7 @@
     ]
   },
   "pages/projects/index.vue": {
-    "file": "index-fea84179.mjs",
+    "file": "index-42ac8ad3.mjs",
     "src": "pages/projects/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -576,29 +577,32 @@
     ]
   },
   "pages/projects/new-year-countdown.vue": {
-    "file": "new-year-countdown-341871a7.mjs",
+    "file": "new-year-countdown-3e581049.mjs",
     "src": "pages/projects/new-year-countdown.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_confetti-71e3018d.mjs",
-      "node_modules/nuxt/dist/app/entry.mjs"
-    ]
-  },
-  "_confetti-71e3018d.mjs": {
-    "file": "confetti-71e3018d.mjs"
-  },
-  "pages/projects/zoot-countdown.vue": {
-    "file": "zoot-countdown-8bd15347.mjs",
-    "src": "pages/projects/zoot-countdown.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "_confetti-71e3018d.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/specs.vue": {
-    "file": "specs-7bde802a.mjs",
+    "file": "specs-25570bf9.mjs",
     "src": "pages/specs.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/zuite/resource-packs.vue": {
+    "file": "resource-packs-8d1f9a68.mjs",
+    "src": "pages/zuite/resource-packs.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/zuite/stream-countdown.vue": {
+    "file": "stream-countdown-5e00717f.mjs",
+    "src": "pages/zuite/stream-countdown.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
