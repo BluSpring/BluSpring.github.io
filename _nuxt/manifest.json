@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-6ebd3f16.mjs",
+    "file": "entry-8dbd0475.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -13,7 +13,7 @@
       "pages/zuite/stream-countdown.vue"
     ],
     "css": [
-      "entry.6852dede.css"
+      "entry.c38e9580.css"
     ],
     "assets": [
       "UniSansThin.a2e7014c.otf",
@@ -553,7 +553,7 @@
     ]
   },
   "pages/commissions.vue": {
-    "file": "commissions-51df92e0.mjs",
+    "file": "commissions-f220501b.mjs",
     "src": "pages/commissions.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -561,7 +561,7 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-81a43f68.mjs",
+    "file": "index-3b415128.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -569,7 +569,7 @@
     ]
   },
   "pages/projects/index.vue": {
-    "file": "index-42ac8ad3.mjs",
+    "file": "index-79eac18d.mjs",
     "src": "pages/projects/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -577,7 +577,7 @@
     ]
   },
   "pages/projects/new-year-countdown.vue": {
-    "file": "new-year-countdown-3e581049.mjs",
+    "file": "new-year-countdown-2ebad432.mjs",
     "src": "pages/projects/new-year-countdown.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -585,7 +585,7 @@
     ]
   },
   "pages/specs.vue": {
-    "file": "specs-25570bf9.mjs",
+    "file": "specs-538b346d.mjs",
     "src": "pages/specs.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -593,7 +593,7 @@
     ]
   },
   "pages/zuite/resource-packs.vue": {
-    "file": "resource-packs-8d1f9a68.mjs",
+    "file": "resource-packs-a07cfe68.mjs",
     "src": "pages/zuite/resource-packs.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -601,7 +601,7 @@
     ]
   },
   "pages/zuite/stream-countdown.vue": {
-    "file": "stream-countdown-5e00717f.mjs",
+    "file": "stream-countdown-3f1200fb.mjs",
     "src": "pages/zuite/stream-countdown.vue",
     "isDynamicEntry": true,
     "imports": [
