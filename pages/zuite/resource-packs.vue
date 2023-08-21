@@ -32,7 +32,13 @@ export default {
                 { rel: 'icon', href: '/img/zuite/zuite_skull.ico' }
             ]
         };
-    }
+    },
+    mounted() {
+        document.getElementsByClassName('navbar').item(0).classList.add('hidden');
+    },
+    unmounted() {
+        document.getElementsByClassName('navbar').item(0).classList.remove('hidden');
+    },
 }
 </script>
 
@@ -75,10 +81,6 @@ export default {
 body {
     font-family: Nunito, sans-serif !important;
     color: rgb(240, 231, 239);
-}
-
-.navbar {
-    display: none !important;
 }
 
 .dl {
