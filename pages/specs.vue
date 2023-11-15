@@ -3,9 +3,32 @@
         <div>
             <div class="computer pt-5 pb-5">
                 <SpecsCard 
-                    name="Kizaru"
+                    name="Katruna"
                     type="Gaming Computer"
-                    description="The computer I use in my daily life. Shipped over to me by someone who was very special to me."
+                    description="The computer I use in my daily life. My very first desktop."
+                    model="Custom built"
+                />
+
+                <div class="specifications mx-auto container text-center p-5 rounded-md">
+                    <SpecCard title="Motherboard" description="GIGABYTE B650 AORUS ELITE AX" />
+                    <SpecCard title="Case" description="Corsair 3000D Airflow" />
+                    <SpecCard title="CPU" description="AMD Ryzen 7 7700X @ 4.50 GHz" />
+                    <SpecCard title="GPU" description="AMD Radeon RX 5500 XT" />
+                    <SpecCard title="PSU" description="FSP Hydro GT Pro 850W" />
+                    <SpecCard title="CPU Cooler" description="Corsair H150 RGB 360mm Liquid CPU Cooler" />
+                    <SpecCard title="Memory" description="(2x) 16 GB Corsair Dominator Platinum Black RGB DDR5-6000MHz" />
+                    <SpecCard title="SSD (NVMe)" description="1 TB Samsung 990 Pro" />
+                    <SpecCard title="HDD (Games)" description="2 TB Seagate Barracuda 7200 RPM ST2000DM008" />
+                    <SpecCard title="HDD (Recordings)" description="1 TB Western Digital Purple WD10PURX" />
+                    <SpecCard title="HDD (Storage, USB)" description="2 TB Western Digital My Passport 3321B" />
+                </div>
+            </div>
+
+            <div class="computer pt-5 pb-5">
+                <SpecsCard 
+                    name="Kizaru"
+                    type="Gaming Laptop"
+                    description="The laptop I use every once in aw hile. Shipped over to me by someone who was very special to me."
                     model="Asus TUF Gaming FX505DY-AL016T"
                 />
 
@@ -33,7 +56,6 @@
                     <SpecCard title="Memory" description="8 GB LPDDR3-1600MHz SODIMM" />
                     <SpecCard title="SSD (NVMe)" description="128 GB Apple SSD PCIe SM0128G" />
                     <SpecCard title="HDD (Storage, USB)" description="2 TB Seagate Backup Plus Slim SRD00F1" />
-                    <SpecCard title="HDD (Recordings)" description="1 TB Western Digital Purple WD10PURX" />
                 </div>
             </div>
 
