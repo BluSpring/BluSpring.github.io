@@ -64,7 +64,7 @@ export default {
         <h3 class="text-4xl font-extrabold">Zuite's Resource Pack Mix</h3>
 
         <div class="list text-sm sm:text-base w-screen sm:w-11/12">
-            <template v-for="version in Object.keys(versions).sort((a, b) => parseInt(b.split('.')[1]) - parseInt(a.split('.')[1]))" :key="version">
+            <template v-for="version in Object.keys(versions).sort((a, b) => (parseInt(b.split('.')[2] ?? 0) - parseInt(a.split('.')[2] ?? 0)) - parseInt(b.split('.')[1]) - parseInt(a.split('.')[1]))" :key="version">
                 <div class="version-button m-2 p-3 rounded-lg" @click="toggle[version] = !toggle[version]">
                     <i :class="`fas fa-caret-${!!toggle[version] ? 'up' : 'down'}`"></i> 
                     

@@ -152,10 +152,17 @@ export default {
                     name: 'CG5 - I See A Dreamer', 
                     url: '/music/isad.mp3',
                     startAt: '23:58:30'
+                },
+                {
+                    name: 'Dream - Slow Down',
+                    url: '/music/slowdown.mp3',
+                    startAt: '23:58:51'
                 }
             ],
+            // i'm pretty sure these are random values?
             startAt: 9953959549044432,
             songTime: 3049035903590539359,
+            
             iOSSafari: false,
             audio: new Audio(),
             confetti: null,

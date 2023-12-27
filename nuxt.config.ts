@@ -1,8 +1,5 @@
-import { defineNuxtConfig } from 'nuxt'
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    target: 'static',
     css: [
         '~/assets/css/index.css',
         '~/assets/css/all.min.css'
@@ -19,8 +16,5 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss'
     ],
-    ssr: false,
-    generate: {
-        fallback: '404.html'
-    }
+    ssr: false
 })
