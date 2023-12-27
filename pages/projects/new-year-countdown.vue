@@ -162,7 +162,7 @@ export default {
             // i'm pretty sure these are random values?
             startAt: 9953959549044432,
             songTime: 3049035903590539359,
-            
+
             iOSSafari: false,
             audio: new Audio(),
             confetti: null,
@@ -246,14 +246,14 @@ export default {
             this.time = date.toLocaleTimeString();
 
             if (Date.now() < startTime) {
-                const distance = Date.now() - startTime;
+                const distance = startTime - Date.now();
             
                 let days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 let seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
-                this.countdown = `${pad(Math.abs(days + 1))}:${pad(Math.abs(hours + 1))}:${pad(Math.abs(minutes + 1))}:${pad(Math.abs(seconds + 1))}`;
+                this.countdown = `${pad(Math.abs(days))}:${pad(Math.abs(hours))}:${pad(Math.abs(minutes))}:${pad(Math.abs(seconds))}`;
 
                 if (seconds <= 15 && minutes == 0 && hours == 0 && days == 0 && seconds % 2 == 0) {
                     this.$refs.countdown.style.color = 'rgb(238, 43, 43)';
