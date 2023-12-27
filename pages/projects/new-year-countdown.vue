@@ -1,4 +1,6 @@
 <template>
+    <Title>New Year Countdown</Title>
+
     <main :class="`w-full h-full m-auto absolute top-0 left-0 table ${this.mode == 'light' ? 'bg-[#eeeeee]' : 'text-white'}`">
         <canvas ref="confetti" class="absolute top-0 left-0 pointer-events-none z-40 w-screen h-screen"></canvas>
 

@@ -1,4 +1,6 @@
 <template>
+    <Title>Home</Title>
+
     <main class="w-full">
         <div class="container profile-card justify-between items-center mx-auto pt-24 w-2/3 md:w-1/3 flex-wrap text-center">
             <img class="profile w-1/2 left-0 right-0 mx-auto rounded-full border-2 border-blue-100" src="/img/profile.png">

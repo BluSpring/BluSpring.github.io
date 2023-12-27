@@ -16,6 +16,8 @@ export default {
 
 <!-- Will be completed later. -->
 <template>
+    <Title>Commissions</Title>
+
     <main class="w-full h-full m-auto absolute top-0 left-0 text-center mt-36 md:mt-16">
         <div class="text-white text-3xl my-auto h-screen">
             Currently closed due to not having enough time to do any.

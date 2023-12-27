@@ -2,6 +2,8 @@
 
 <!-- TODO: need to be improved -->
 <template>
+    <Title>Projects</Title>
+
     <main class="w-full h-full m-auto absolute top-0 left-0 table">
         <div class="projects h-full align-top table-cell pt-14">
             <div class="projects-wrapper overflow-auto justify-center align-middle content-center object-center items-center max-h-full h-full">

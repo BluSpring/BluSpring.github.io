@@ -1,4 +1,6 @@
 <template>
+    <Title>System Specifications</Title>
+
     <main class="w-full h-full m-auto absolute top-0 left-0 pt-12 text-2xl overflow-y-auto">
         <div>
             <div class="computer pt-5 pb-5">

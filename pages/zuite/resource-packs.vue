@@ -55,6 +55,8 @@ export default {
 </script>
 
 <template>
+    <Title>Zuite's Resource Pack Mix</Title>
+
     <div class="background">
         <div class="circles"></div>
     </div>
