@@ -158,7 +158,7 @@ export default {
                 {
                     name: 'Dream - Slow Down',
                     url: '/music/slowdown.mp3',
-                    startAt: '23:58:51'
+                    startAt: '23:58:49'
                 }
             ],
             // i'm pretty sure these are random values?
