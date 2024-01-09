@@ -39,6 +39,29 @@
                 </div>
 
                 <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
+                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-hidden overflow-x-scroll">
+                        <ProjectInfoCard 
+                            name="CrunchMunch Creations"
+                            title="Developer" 
+                            image="crunchmunch.png"
+                            description="Creations team consisting of me and my friends Zuite and Mimi!"
+                            period="2023-"
+                            link="https://crunchmunch.xyz"
+                            color="#E25D87"
+                            class="inline-block mt-2 float-left"
+                        />
+
+                        <ProjectCard
+                            title="Chrunchy Christmas"
+                            image="chrunchy_christmas.png"
+                            description="A Minecraft charity Christmas event we created alongside WraithStation and Vandal Events!"
+                            link="https://crunchmunch.xyz/projects/chrunchy-christmas/"
+                            class="inline-block ml-2 mt-2 float-left"
+                        />
+                    </div>
+                </div>
+
+                <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
                     <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-auto overflow-x-auto">
                         <ProjectInfoCard 
                             name="CaptainPuffy"
