@@ -117,7 +117,7 @@
                             image="vandal.png"
                             description="We are a group of people working on seasonal-based Minecraft community events."
                             period="2021-"
-                            link="https://vandal.events"
+                            link="https://vandal-events.gitlab.io"
                             color="#4d978b"
                             class="inline-block mt-2 float-left"
                         />
