@@ -112,6 +112,29 @@
                 <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
                     <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-hidden overflow-x-scroll">
                         <ProjectInfoCard 
+                            name="FinnSowle"
+                            title="Developer" 
+                            image="finnsowle.jpg"
+                            description="I work on creating Minecraft mods and plugins for content creator FinnSowle."
+                            period="2023-"
+                            link="https://youtube.com/@FinnSowle"
+                            color="#33A9C6"
+                            class="inline-block mt-2 float-left"
+                        />
+
+                        <ProjectCard
+                            title="Crimecraft S3"
+                            image="crimecraft_s3.png"
+                            description="I worked on creating and porting mods for this season of Crimecraft."
+                            link="https://www.youtube.com/playlist?list=PL8iVQZQ_MFqp-So-SjEje5nMhCfQVP0GB"
+                            class="inline-block ml-2 mt-2 float-left"
+                        />
+                    </div>
+                </div>
+
+                <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
+                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-hidden overflow-x-scroll">
+                        <ProjectInfoCard 
                             name="Vandal Events"
                             title="Lead Developer" 
                             image="vandal.png"
