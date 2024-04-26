@@ -30,7 +30,7 @@
                 <SpecsCard 
                     name="Kizaru"
                     type="Gaming Laptop"
-                    description="The laptop I use every once in aw hile. Shipped over to me by someone who was very special to me."
+                    description="The laptop I use every once in a while. Shipped over to me by someone who was very special to me."
                     model="Asus TUF Gaming FX505DY-AL016T"
                 />
 
