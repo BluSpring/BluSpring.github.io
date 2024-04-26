@@ -18,7 +18,7 @@
                     <SpecCard title="GPU" description="AMD Radeon RX 5500 XT" />
                     <SpecCard title="PSU" description="FSP Hydro GT Pro 850W" />
                     <SpecCard title="CPU Cooler" description="Corsair H150 RGB 360mm Liquid CPU Cooler" />
-                    <SpecCard title="Memory" description="(2x) 16 GB Corsair Dominator Platinum Black RGB DDR5-6000MHz" />
+                    <SpecCard title="Memory" description="(2x16GB) 32 GB Corsair Dominator Platinum Black RGB DDR5-6000MHz" />
                     <SpecCard title="SSD (NVMe)" description="1 TB Samsung 990 Pro" />
                     <SpecCard title="HDD (Games)" description="2 TB Seagate Barracuda 7200 RPM ST2000DM008" />
                     <SpecCard title="HDD (Recordings)" description="1 TB Western Digital Purple WD10PURX" />
@@ -70,8 +70,8 @@
                 />
 
                 <div class="specifications mx-auto container text-center p-5 rounded-md">
-                    <SpecCard title='Primary "Monitor"' description='SHARP AQUOS 19" LC-19LE150M (1360x768)' />
-                    <SpecCard title='Secondary "Monitor"' description='SHARP AQUOS 19" LC-19LE150M (1920x1080)' />
+                    <SpecCard title='Primary Monitor' description='Philips 272E1GSJ 27"' />
+                    <SpecCard title='Secondary "Monitors"' description='SHARP AQUOS 19" LC-19LE150M (1920x1080)' />
                     <SpecCard title="Webcam" description="Samsung Galaxy A03s" />
                     <SpecCard title="Microphone" description="Neewer NW-700" />
                     <SpecCard title="Headset" description="Astro A10 Gen. 1" />
