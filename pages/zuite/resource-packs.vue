@@ -62,7 +62,7 @@ export default {
     </div>
 
     <div class="card p-3 sm:p-10 text-center w-screen sm:w-11/12">
-        <img src="/img/zuite/zuite_main.png" alt="zuite" class="mx-auto top-0 left-0 right-0 h-1/3">
+        <img src="/img/zuite/zuite_main.png" alt="zuite" class="mx-auto top-0 left-0 right-0 h-1/3 mb-8 rounded-full">
         <h3 class="text-4xl font-extrabold">Zuite's Resource Pack Mix</h3>
 
         <div class="list text-sm sm:text-base w-screen sm:w-11/12">
