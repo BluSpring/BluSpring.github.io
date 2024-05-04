@@ -58,7 +58,7 @@ export default {
     <Title>Zuite's Resource Pack Mix</Title>
 
     <div class="background">
-        <div class="circles"></div>
+        <!--<div class="circles"></div>-->
     </div>
 
     <div class="card p-3 sm:p-10 text-center w-screen sm:w-11/12">
@@ -106,7 +106,7 @@ body {
 }
 
 .version-button {
-    background: rgba(22, 17, 21, 0.3);
+    background: rgba(117, 50, 50, 0.3);
     cursor: pointer;
 }
 
@@ -121,12 +121,12 @@ body {
 }
 
 .version-list-item {
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(41, 13, 13, 0.35);
     width: 97%;
     margin: auto;
     left: 0;
     right: 0;
-    border: 0.5px rgba(0, 0, 0, 0.1) solid;
+    border: 0.5px rgba(41, 13, 13, 0.1) solid;
 }
 
 .list {
@@ -144,13 +144,15 @@ body {
     z-index: -15;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, #392f6c, #4b367d);
+    /*background: linear-gradient(to bottom, #392f6c, #4b367d);*/
+    background: linear-gradient(to bottom, #f69c9c, #ffd3d3);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card {
-    background: #282240c7;
+    /*background: #282240c7;*/
+    background: #b96e6ec7;
     height: 90%;
     max-height: 90%;
     position: absolute;
@@ -165,7 +167,7 @@ body {
     backdrop-filter: blur(2px);
 }
 
-.circles {
+/*.circles {
     mask-image: radial-gradient(ellipse at center, #4d3d7fd7 0%, #4d3d7fd7 30%, transparent 30%);
     mask-image: -webkit-radial-gradient(ellipse at center, #4d3d7fd7 0%, #4d3d7fd7 30%, transparent 30%);
     mask-image: -o-radial-gradient(ellipse at center, #4d3d7fd7 0%, #4d3d7fd7 30%, transparent 30%);
@@ -190,5 +192,5 @@ body {
 
     width: 100%;
     height: 100%;
-}
+}*/
 </style>
