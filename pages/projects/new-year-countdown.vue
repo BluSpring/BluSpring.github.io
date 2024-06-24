@@ -126,9 +126,29 @@ export default {
                     startAt: '23:58:36'
                 },
                 {
+                    name: "Wilbur Soot - Your New Boyfriend",
+                    url: "/music/ynb.mp3",
+                    startAt: '23:58:48'
+                },
+                {
                     name: 'Glass Animals - Heat Waves',
                     url: '/music/heatwaves.mp3',
                     startAt: '23:59:43'
+                },
+                {
+                    name: 'Lovejoy - The Fall',
+                    url: '/music/thefall.mp3',
+                    startAt: '23:57:47'
+                },
+                {
+                    name: 'Lovejoy - It\'s All Futile! It\'s All Pointless!',
+                    url: '/music/iafiap.mp3',
+                    startAt: '23:58:51'
+                },
+                {
+                    name: 'Lovejoy - Model Buses',
+                    url: '/music/modelbuses.mp3',
+                    startAt: '23:57:52'
                 },
                 {
                     name: 'CG5 - I See A Dreamer', 
