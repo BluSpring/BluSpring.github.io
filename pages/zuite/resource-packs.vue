@@ -32,6 +32,12 @@ export default {
                         url: "/static/packs/271223/ZuiteMix-1.20.3.zip",
                         timestamp: 1703686735003
                     }
+                ],
+                '1.21': [
+                    {
+                        url: "/static/packs/140724/ZuiteMix-1.21.zip",
+                        timestamp: 1720898067476
+                    }
                 ]
             },
             toggle: {}
