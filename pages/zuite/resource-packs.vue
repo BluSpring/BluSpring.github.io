@@ -89,7 +89,7 @@ export default {
 
                 <transition name="slide">
                     <div class="version-list my-0 border-y-0" v-if="!!toggle[version]">
-                        <template v-for="pack in versions[version].sort((a, b) => a.timestamp - b.timestamp)" :key="pack.timestamp">
+                        <template v-for="pack in versions[version].sort((a, b) => b.timestamp - a.timestamp)" :key="pack.timestamp">
                             <div class="version-list-item p-3">
                                 <span class="font-bold float-left">ZuiteMix-{{ version }}</span>
                                 <span class="font-regular">{{ new Date(pack.timestamp).toLocaleDateString() }}</span>
