@@ -7,18 +7,30 @@ export default {
                     {
                         url: "/static/packs/060823/ZuiteMix-1.18.zip",
                         timestamp: 1691284908349
+                    },
+                    {
+                        url: "/static/packs/160724/ZuiteMix-1.18.zip",
+                        timestamp: 1721063313678
                     }
                 ],
                 '1.19': [
                     {
                         url: "/static/packs/060823/ZuiteMix-1.19.zip",
                         timestamp: 1691284908349
+                    },
+                    {
+                        url: "/static/packs/160724/ZuiteMix-1.19.zip",
+                        timestamp: 1721063313678
                     }
                 ],
                 '1.20': [
                     {
                         url: "/static/packs/060823/ZuiteMix-1.20.zip",
                         timestamp: 1691284908349
+                    },
+                    {
+                        url: "/static/packs/160724/ZuiteMix-1.20.zip",
+                        timestamp: 1721063313678
                     }
                 ],
                 '1.20.2': [
@@ -35,6 +47,10 @@ export default {
                     {
                         url: "/static/packs/150724/ZuiteMix-1.20.3.zip",
                         timestamp: 1721048997403
+                    },
+                    {
+                        url: "/static/packs/160724/ZuiteMix-1.20.3.zip",
+                        timestamp: 1721063313678
                     }
                 ],
                 '1.21': [
@@ -45,6 +61,10 @@ export default {
                     {
                         url: "/static/packs/150724/ZuiteMix-1.21.zip",
                         timestamp: 1721048997403
+                    },
+                    {
+                        url: "/static/packs/160724/ZuiteMix-1.21.zip",
+                        timestamp: 1721063313678
                     }
                 ]
             },
