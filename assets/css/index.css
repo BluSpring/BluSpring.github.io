@@ -17,6 +17,16 @@
     font-family: 'Rajdhani';
 }
 
+@font-face {
+    src: url(/assets/fonts/Rajdhani-Medium.ttf);
+    font-family: 'Rajdhani Medium';
+}
+
+@font-face {
+    src: url(/assets/fonts/Rajdhani-SemiBold.ttf);
+    font-family: 'Rajdhani Semibold';
+}
+
 body {
     -webkit-user-select: none;
     -webkit-user-drag: none;
