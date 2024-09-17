@@ -5,7 +5,7 @@
         <div class="container profile-card justify-between items-center mx-auto pt-24 w-2/3 md:w-1/3 flex-wrap text-center">
             <img class="profile w-1/2 left-0 right-0 mx-auto rounded-full border-2 border-blue-100" src="/img/profile.png">
             <br>
-            <span class="text-5xl md:text-7xl text-blue-300 left-0 right-0 mx-auto text-center">Naz / BluSpring</span>
+            <span class="text-5xl md:text-7xl name left-0 right-0 mx-auto text-center">Naz / BluSpring</span>
         </div>
         <div class="container justify-between items-center mx-auto pt-12 w-2/3 md:w-1/3 text-center text-3xl md:text-4xl">
             <div class="pb-2">
@@ -26,13 +26,21 @@
             <NuxtLink to="https://github.com/BluSpring" title="GitHub" class="px-5 github"><i class="fab fa-github"></i></NuxtLink>
             <NuxtLink to="https://gitlab.com/BluSpring1" title="GitLab" class="px-5 gitlab"><i class="fab fa-gitlab"></i></NuxtLink>
             <NuxtLink to="https://tiktok.com/@bluspring_yt" title="TikTok" class="px-5 tiktok"><i class="fab fa-tiktok"></i></NuxtLink>
-            <NuxtLink to="https://reddit.com/u/IndoHQ_Blu_YT" title="Reddit" class="px-5 reddit"><i class="fab fa-reddit"></i></NuxtLink>
+            <NuxtLink to="https://reddit.com/u/IndoHQ_Blu_YT" title="Reddit" class="px-5 reddit"><i class="fab fa-reddit-alien"></i></NuxtLink>
         </div>
     </main>
 </template>
 
 <style scoped>
 .socials {
+    color: rgb(112, 112, 112);
+}
+
+.light-mode .socials {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .socials {
     color: rgb(206, 206, 206);
 }
 
@@ -82,11 +90,34 @@ main {
     color: white;
 }
 
+.name {
+    font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+
+    color: rgb(0, 219, 201);
+}
+
+.dark-mode .name {
+    color: rgb(0, 255, 255);
+}
+
 .thing {
-    color: rgb(141, 247, 238);
+    color: rgb(0, 216, 187);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.light-mode .thing {
+    font-family: 'Rajdhani Medium', 'Segoe UI', sans-serif;
 }
 
 .thing:hover {
+    color: rgb(130, 240, 255);
+}
+
+.dark-mode .thing {
+    color: rgb(141, 247, 238);
+}
+
+.dark-mode .thing:hover {
     color: rgb(194, 242, 248);
 }
 </style>

@@ -16,6 +16,11 @@ export default {
 <style scoped>
 .spec-card {
     border: 1px solid black;
-    background: rgb(167, 94, 94);
+    background: rgb(212, 100, 100);
+}
+
+.dark-mode .spec-card {
+    border: 1px solid black;
+    background: rgb(170, 66, 66);
 }
 </style>

@@ -19,7 +19,15 @@ export default {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.dark-mode .description {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .specs-card {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .specs-card {
     background: rgba(0, 0, 0, 0.4);
 }
 </style>

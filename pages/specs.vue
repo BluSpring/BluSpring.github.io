@@ -15,7 +15,7 @@
                     <SpecCard title="Motherboard" description="GIGABYTE B650 AORUS ELITE AX" />
                     <SpecCard title="Case" description="Corsair 3000D Airflow" />
                     <SpecCard title="CPU" description="AMD Ryzen 7 7700X @ 4.50 GHz" />
-                    <SpecCard title="GPU" description="AMD Radeon RX 5500 XT" />
+                    <SpecCard title="GPU" description="GIGABYTE AMD Radeon RX 5500 XT" />
                     <SpecCard title="PSU" description="FSP Hydro GT Pro 850W" />
                     <SpecCard title="CPU Cooler" description="Corsair H150 RGB 360mm Liquid CPU Cooler" />
                     <SpecCard title="Memory" description="(2x16GB) 32 GB Corsair Dominator Platinum Black RGB DDR5-6000MHz" />
@@ -41,7 +41,6 @@
                     <SpecCard title="Memory (Slot #1)" description="(1x) 8 GB Kingston PC4-21300 DDR4-2666MHz SODIMM" />
                     <SpecCard title="SSD (NVMe)" description="256 GB Western Digital PC SN520" />
                     <SpecCard title="HDD (Games)" description="1 TB Samsung ST1000LM024 HN-M101MBB" />
-                    <SpecCard title="HDD (Storage, USB)" description="2 TB Western Digital My Passport 3321B" />
                 </div>
             </div>
 
@@ -71,8 +70,8 @@
 
                 <div class="specifications mx-auto container text-center p-5 rounded-md">
                     <SpecCard title='Primary Monitor' description='Philips 272E1GSJ 27"' />
-                    <SpecCard title='Secondary "Monitors"' description='SHARP AQUOS 19" LC-19LE150M (1920x1080)' />
-                    <SpecCard title="Webcam" description="Samsung Galaxy A03s" />
+                    <SpecCard title='Secondary "Monitors"' description='SHARP AQUOS 19" LC-19LE150M' />
+                    <SpecCard title="Webcam" description="Samsung Galaxy A35" />
                     <SpecCard title="Microphone" description="Neewer NW-700" />
                     <SpecCard title="Headset" description="Astro A10 Gen. 1" />
                     <SpecCard title="Keyboard" description="Logitech G512 Carbon (GX Brown Tactile)" />
@@ -91,14 +90,6 @@
     justify-content: center;
     justify-items: center;
     align-content: center;
-}
-
-.computer {
-    background: rgba(51, 43, 43, 0.418);
-}
-
-.peripherals {
-    background: rgba(44, 35, 35, 0.418);
 }
 </style>
 

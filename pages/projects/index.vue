@@ -1,169 +1,79 @@
-<!-- copilot-description is basically what GitHub Copilot came up with, and it's funny -->
-
-<!-- TODO: need to be improved -->
 <template>
     <Title>Projects</Title>
 
+    <p class="text-red-600"></p>
+
     <main class="w-full h-full m-auto absolute top-0 left-0 table">
-        <div class="projects h-full align-top table-cell pt-14">
+        <div class="projects align-top table-cell">
             <div class="projects-wrapper overflow-auto justify-center align-middle content-center object-center items-center max-h-full h-full">
-                <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
-                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-hidden overflow-x-scroll">
-                        <ProjectInfoCard 
-                            name="Personal Projects"
-                            title="" 
-                            image="bluspring.png"
-                            description="My own personal projects that I've been proud of."
-                            period="2017-"
-                            link="https://bluspring.xyz"
-                            color="#53C6B9"
-                            class="inline-block mt-2 float-left"
-                        />
+                <div class="h-24"></div>
 
-                        <ProjectCard
-                            title="Kilt"
-                            image="kilt.png"
-                            description="A Fabric mod designed to bring Forge mods into Fabric."
-                            link="https://github.com/KiltMC/Kilt"
-                            class="inline-block ml-2 mt-2 float-left"
-                        />
+                <h1 class="text-center text-cyan-400 dark:text-cyan-200 text-8xl py-8">Projects</h1>
 
-                        <ProjectCard
-                            title="Nicknamer"
-                            image="nicknamer.png"
-                            description="A Fabric mod for client-side nicknames."
-                            link="https://github.com/BluSpring/Nicknamer"
-                            class="inline-block ml-2 mt-2 float-left"
-                        />
-                    </div>
-                </div>
+                <ProjectTeam color="cyan-300" hoverColor="cyan-200" image="bluspring.png" 
+                    name="Personal Projects"
+                    description="My own personal projects that I've made over the years."
+                    background="kilt.webp"
+                    url="/"
+                    duration="2017-"
+                >
+                    <ProjectCard color="cyan-400" image="kilt.png" name="Kilt">
+                        A Minecraft mod designed to load Forge mods in Fabric. Currently under very heavy development, and is very unstable.<br><br>
 
-                <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
-                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-hidden overflow-x-scroll">
-                        <ProjectInfoCard 
-                            name="CrunchMunch Creations"
-                            title="Developer" 
-                            image="crunchmunch.png"
-                            description="Creations team consisting of me and my friends Zuite and Mimi!"
-                            period="2023-"
-                            link="https://crunchmunch.xyz"
-                            color="#E25D87"
-                            class="inline-block mt-2 float-left"
-                        />
+                        The development can be followed on <a href="https://github.com/KiltMC/Kilt">GitHub</a> and <a href="https://discord.gg/enGK2TymYJ">Discord</a>.
+                    </ProjectCard>
 
-                        <ProjectCard
-                            title="Chrunchy Christmas"
-                            image="chrunchy_christmas.png"
-                            description="A Minecraft charity Christmas event we created alongside WraithStation and Vandal Events!"
-                            link="https://crunchmunch.xyz/projects/chrunchy-christmas/"
-                            class="inline-block ml-2 mt-2 float-left"
-                        />
-                    </div>
-                </div>
+                    <ProjectCard color="red-400" image="nicknamer.png" name="Nicknamer">
+                        A Fabric mod for client-side nicknames.
+                    </ProjectCard>
 
-                <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
-                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-auto overflow-x-auto">
-                        <ProjectInfoCard 
-                            name="CaptainPuffy"
-                            title="Developer" 
-                            image="puffy.png"
-                            copilot-description="A Discord bot that allows users to create and manage their own Puffy server. The bot is currently in development and is not available for use."
-                            description="I work with a team of people on making Minecraft plugins & mods for content creator CaptainPuffy."
-                            period="2022-"
-                            link="https://youtube.com/CaptainPuffy"
-                            color="#97232d"
-                            class="inline-block mt-2 float-left"
-                        />
+                    <ProjectCard color="red-600" image="enhancedbookwriting.png" name="Enhanced Book Writing">
+                        A Fabric mod for having a better experience with writing books in Minecraft.
+                    </ProjectCard>
+                </ProjectTeam>
 
-                        <ProjectCard 
-                            title="Minecraft, But EVERY Recipe is RANDOM!"
-                            image="randomized_crafting.jpg"
-                            description="A Minecraft plugin where crafting recipes generate a random item every 5 minutes."
-                            link="https://www.youtube.com/watch?v=_ALo9zq3jkc"
-                            class="inline-block ml-2 mt-2 float-left"
-                        />
-                        
-                        <ProjectCard 
-                            title="Minecraft, But I beat it Backwards!"
-                            image="backwards_mc.jpg"
-                            description="A Minecraft mod that makes you start in the End, and work your way up to the Overworld."
-                            link="https://www.youtube.com/watch?v=8Rw5Y3FsShU"
-                            class="inline-block ml-2 mt-2 float-left"
-                        />
+                <ProjectTeam color="pink-300" hoverColor="pink-200" image="crunchmunch.png" 
+                    name="CrunchMunch Creations"
+                    description="A team of 3 Minecraft creators (myself, Zuite and FlopsyMimi) who came together and started making things together."
+                    background="crunchmunch.webp"
+                    url="https://crunchmunch.xyz"
+                    duration="2023-"
+                >
+                    <ProjectCard color="green-400" image="chrunchy_christmas.webp" name="Chrunchy Christmas">
+                        A streamer-only Christmas charity event for raising money towards Jingle Jam, created alongside WraithStation
+                        and Vandal Events. Includes some of our own unique takes of popular minigames, and new never-before-seen minigames,
+                        such as a minigame that involves the Warden.
+                    </ProjectCard>
 
-                        <ProjectCard 
-                            title="Minecraft, But I Can ONLY Walk in a Straight Line"
-                            image="straight_mc.jpg"
-                            description="A Minecraft mod that only allows you to walk in a straight line."
-                            link="https://www.youtube.com/watch?v=7lS1xKz5nDE"
-                            class="inline-block ml-2 mt-2 float-left"
-                        />
+                    <ProjectCard color="red-400" image="e.webp" name="The E Project">
+                        A work-in-progress, fully Vanilla Minecraft map designed entirely around Technoblade and his memory.<br>
 
-                        <ProjectCard 
-                            title="THIS MINECRAFT YOUTUBER GOT MONEY JUST BECAUSE I JUMPED!?"
-                            image="jump_mc.jpg"
-                            description="A Minecraft plugin that randomizes which creator you transform into whenever you jump."
-                            link="https://www.youtube.com/watch?v=3Fpfad3HsOA"
-                            class="inline-block ml-2 mt-2 float-left"
-                        />
-                    </div>
-                </div>
+                        Inspired by the Diversity map series by qmagnet.
+                    </ProjectCard>
+                </ProjectTeam>
 
-                <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
-                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-hidden overflow-x-scroll">
-                        <ProjectInfoCard 
-                            name="FinnSowle"
-                            title="Developer" 
-                            image="finnsowle.jpg"
-                            description="I work on creating Minecraft mods and plugins for content creator FinnSowle."
-                            period="2023-"
-                            link="https://youtube.com/@FinnSowle"
-                            color="#33A9C6"
-                            class="inline-block mt-2 float-left"
-                        />
+                <ProjectTeam color="cyan-300" hoverColor="cyan-200" image="unitymp.png" 
+                    name="Unity Multiplayer"
+                    description="The largest multilingual factions SMP."
+                    background="unitymp.webp"
+                    url="https://twitter.com/UnityUpdatesEN"
+                    duration="2024-"
+                >
+                    <ProjectCard color="yellow-400" image="unitytranslate.png" name="UnityTranslate">
+                        The first public live voice translation mod for Minecraft. Inspired by the QSMP.<br>
+                        Uses the LibreTranslate API, an open source translation API created by Argos Open Tech.<br><br>
+                        Available for download on <a href="https://modrinth.com/mod/unitytranslate">Modrinth</a> and <a href="https://curseforge.com/minecraft/mc-mods/unitytranslate">CurseForge</a>.
+                    </ProjectCard>
 
-                        <ProjectCard
-                            title="Crimecraft S3"
-                            image="crimecraft_s3.png"
-                            description="I worked on creating and porting mods for this season of Crimecraft."
-                            link="https://www.youtube.com/playlist?list=PL8iVQZQ_MFqp-So-SjEje5nMhCfQVP0GB"
-                            class="inline-block ml-2 mt-2 float-left"
-                        />
-                    </div>
-                </div>
-
-                <div class="w-11/12 h-96 md:h-2/3 pt-6 pb-1 md:pt-1 mx-auto">
-                    <div class="project w-full h-full max-h-full rounded-md float-left overflow-y-hidden overflow-x-scroll">
-                        <ProjectInfoCard 
-                            name="Vandal Events"
-                            title="Lead Developer" 
-                            image="vandal.png"
-                            description="We are a group of people working on seasonal-based Minecraft community events."
-                            period="2021-"
-                            link="https://vandal-events.gitlab.io"
-                            color="#4d978b"
-                            class="inline-block mt-2 float-left"
-                        />
-
-                        <ProjectCard
-                            title="Denim"
-                            image="denim.png"
-                            description="A Minecraft mod that entirely revamps the Ender Dragon battle by introducing new gameplay elements, while also not requiring any mods to be installed on the client-side. Currently not ready for public release."
-                            link="https://gitlab.com/vandal-events/spring-2022/denim"
-                            class="inline-block ml-2 mt-2 float-left"
-                        />
-                    </div>
-                </div>
+                    <ProjectCard color="green-400" image="unitils.png" name="Unitils">
+                        The utility mod used by Unity Multiplayer for handling flag icons, live indication,
+                        nicknames, badges and more.
+                    </ProjectCard>
+                </ProjectTeam>
             </div>
         </div>
     </main>
 </template>
-
-<style scoped>
-.project {
-    background: rgba(0, 0, 0, 0.2115);
-}
-</style>
 
 <script lang="ts">
 export default {
