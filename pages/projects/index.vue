@@ -1,7 +1,7 @@
 <template>
     <Title>Projects</Title>
 
-    <p class="text-red-600"></p>
+    <p class="text-red-600 text-red-400 text-cyan-200 text-cyan-300 text-yellow-400 text-pink-300 text-green-400"></p>
 
     <main class="w-full h-full m-auto absolute top-0 left-0 table">
         <div class="projects align-top table-cell">
