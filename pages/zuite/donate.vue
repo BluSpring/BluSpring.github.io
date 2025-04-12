@@ -25,10 +25,10 @@ export default {
     </div>
 
     <div class="xl:flex">
-        <div class="xl:w-1/2 h-screen text-center flex bg-[#290d40] px-12">
+        <div class="xl:w-1/2 xl:h-screen text-center block xl:flex px-12 py-8">
             <div class="my-auto">
-                <h3 class="text-8xl font-extrabold pb-8">Just kidding!<br>I am employed :P</h3>
-                <p class="text-2xl pt-8 bree-serif">
+                <h3 class="text-5xl sm:text-6xl md:text-8xl font-extrabold pb-8">Just kidding!<br>I am employed :P</h3>
+                <p class="text-xl md:text-2xl pt-8 bree-serif">
                     Please spend your money responsibly.
                     <br><br>
                     If you absolutely must throw money at me, just subscribe on Twitch or chuck some bits at me.
@@ -107,10 +107,10 @@ body {
     top: 0;
     left: 0;
     z-index: -15;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     /*background: linear-gradient(to bottom, #392f6c, #4b367d);*/
-    background: linear-gradient(to bottom, #f69c9c, #ffd3d3);
+    background: #290d40;
     background-size: cover;
     background-repeat: no-repeat;
 }
