@@ -18,11 +18,14 @@
                     <SpecCard title="GPU" description="GIGABYTE AMD Radeon RX 5500 XT" />
                     <SpecCard title="PSU" description="FSP Hydro GT Pro 850W" />
                     <SpecCard title="CPU Cooler" description="Corsair H150 RGB 360mm Liquid CPU Cooler" />
-                    <SpecCard title="Memory" description="(2x16GB) 32 GB Corsair Dominator Platinum Black RGB DDR5-6000MHz" />
+                    <SpecCard title="Memory" description="(4 x 16GB) 64 GB Corsair Dominator Platinum Black RGB DDR5-6000MHz" />
                     <SpecCard title="SSD (NVMe)" description="1 TB Samsung 990 Pro" />
                     <SpecCard title="HDD (Games)" description="2 TB Seagate Barracuda 7200 RPM ST2000DM008" />
                     <SpecCard title="HDD (Recordings)" description="1 TB Western Digital Purple WD10PURX" />
+                    <SpecCard title="HDD (Storage)" description="500 GB Seagate ST500LT012-9WS142" />
                     <SpecCard title="HDD (Storage, USB)" description="2 TB Western Digital My Passport 3321B" />
+                    <SpecCard title="HDD (Storage, USB)" description="2 TB Seagate Backup Plus Slim SRD00F1" />
+                    <SpecCard title="HDD (Storage, USB)" description="5 TB Western Digital My Passport WDBPKJ0050BBK-QA" />
                 </div>
             </div>
 
@@ -56,7 +59,6 @@
                     <SpecCard title="CPU" description="Intel Core i5-5350U @ 1.80 GHz" />
                     <SpecCard title="Memory" description="8 GB LPDDR3-1600MHz SODIMM" />
                     <SpecCard title="SSD (NVMe)" description="128 GB Apple SSD PCIe SM0128G" />
-                    <SpecCard title="HDD (Storage, USB)" description="2 TB Seagate Backup Plus Slim SRD00F1" />
                 </div>
             </div>
 
@@ -70,10 +72,12 @@
 
                 <div class="specifications mx-auto container text-center p-5 rounded-md">
                     <SpecCard title='Primary Monitor' description='Philips 272E1GSJ 27"' />
-                    <SpecCard title='Secondary "Monitors"' description='SHARP AQUOS 19" LC-19LE150M' />
-                    <SpecCard title="Webcam" description="Samsung Galaxy A35" />
-                    <SpecCard title="Microphone" description="Neewer NW-700" />
-                    <SpecCard title="Headset" description="Astro A10 Gen. 1" />
+                    <SpecCard title='Secondary "Monitors"' description='2x SHARP AQUOS 19" LC-19LE150M' />
+                    <SpecCard title="Webcam (main)" description="Samsung Galaxy A35" />
+                    <SpecCard title="Webcam (alt)" description="Samsung Galaxy A20" />
+                    <SpecCard title="Microphone (main)" description="Elgato Wave 3 Mk1" />
+                    <SpecCard title="Microphone (alt)" description="Neewer NW-700" />
+                    <SpecCard title="Headset" description="Razer Blackshark V2 X" />
                     <SpecCard title="Keyboard" description="Logitech G512 Carbon (GX Brown Tactile)" />
                     <SpecCard title="Mouse" description="Logitech G502 Hero" />
                 </div>
